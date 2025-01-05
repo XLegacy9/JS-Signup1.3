@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="5b24e49fd89287ff1eb5bbc4cf93cb038c3384ef-512x512.webp"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div id="loader" class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="container">
+      <main>
+        <!-- Banner Upload -->
+
+        <div class="banner">
+          <img src="" />
+        </div>
+        <div class="pfp">
+          <!-- Avatar Upload -->
+
+          <div class="avatar">
+            <img src="" />
+          </div>
+        </div>
+        <br />
+        <br />
+        <section class="user-profile">
+          <div class="user-info">
+            <div class="pf-info">
+              <strong
+                style="font-size: 36px; padding: 0; margin-top: 10px"
+                id="profileUsername"
+              ></strong>
+              <br />
+              <br />
+              <div style="display: flex">
+                <strong
+                  >Upload Banner : <br />
+                  <input type="file" id="bannerInput" accept="image/*"
+                /></strong>
+                <br />
+                <strong
+                  >Upload Avatar :
+                  <input type="file" id="avatarInput" accept="image/*" />
+                </strong>
+              </div>
+              <br />
+            </div>
+            <div class="abtme">
+              <strong>ABOUT ME</strong><br />
+              <br />
+              <textarea
+                id="aboutMe"
+                class="text-area"
+                placeholder="type something about yourself ..."
+              ></textarea>
+            </div>
+            <br />
+            <button id="saveChanges" class="link">Save Changes</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+        }, 1500);
+      };
+    </script>
+    <script src="profile.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
